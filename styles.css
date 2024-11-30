@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #1e3d58;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav .nav-links li a:hover {
+    color: #00aaff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e3d58;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    text-decoration: none;
+    color: #fff;
+    background-color: #00aaff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.cta:hover {
+    background-color: #0099cc;
+}
+
+/* Cahier Section */
+.cahier {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.cahier h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.task {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    text-align: left;
+}
+
+.task h3 {
+    font-size: 1.5rem;
+    color: #1e3d58;
+}
+
+.task p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.task strong {
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e3d58;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tasks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .cta {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
